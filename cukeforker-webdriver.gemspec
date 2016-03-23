@@ -3,7 +3,7 @@ $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'cukeforker-webdriver'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.authors = ["Derek Ekins"]
   s.description = 'Run webdriver with ports pre allocated - thanks go to Jari Bakken for the original implementation https://gist.github.com/949241'
   s.summary = "#{s.name}-#{s.version}"
