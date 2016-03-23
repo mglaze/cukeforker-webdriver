@@ -5,10 +5,13 @@ module CukeForker
         max = options.fetch(:max, 2)
         options[:notify] = CukeForker::WebDriver::ParallelPortManager.new(max)
 
-        CukeForker::Runner.run(
-            features,
-            options
-        )
+        if CukeForker::Runner.run(features, options)
+          puts "Output exit 0"
+          exit 0
+        else
+          puts "Output exit 1"
+          exit 1
+        end
       end
     end
   end
